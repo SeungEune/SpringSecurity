@@ -6,8 +6,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
-@Configuration
-@EnableWebSecurity
+//@Configuration
+//@EnableWebSecurity
 @Order(0) //메서드 실행 순서를 지정 해줌
 public class SecurityMultiConfig extends WebSecurityConfigurerAdapter{
 
@@ -27,7 +27,7 @@ public class SecurityMultiConfig extends WebSecurityConfigurerAdapter{
 }
 
 
-@Configuration
+//@Configuration
 @Order(1) //메서드 실행 순서를 지정 해줌
 class SecurityConfig2 extends WebSecurityConfigurerAdapter{
 
