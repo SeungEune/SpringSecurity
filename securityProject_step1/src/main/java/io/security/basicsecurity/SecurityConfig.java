@@ -27,8 +27,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@Configuration
-@EnableWebSecurity
+//@Configuration
+//@EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -202,8 +202,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //                .exceptionHandling()
 //                .authenticationEntryPoint() //인증 실패시
 //                .accessDeniedHandler()    //인가 실패시
-
-
         http
                 .exceptionHandling()
                 .authenticationEntryPoint(new AuthenticationEntryPoint() {
